@@ -1,4 +1,4 @@
-# # Eliminar Ou de Active Directory que no tengan usuarios, equipos o grupos y desactivar la protección de la OU
+# Eliminar Ou de Active Directory que no tengan usuarios, equipos o grupos y desactivar la protección de la OU
 
 # importar el módulo Active Directory
 Import-Module ActiveDirectory

@@ -1,8 +1,5 @@
 # Mover usuarios activos de directorio activo a OU 
 
-# Import Active Directory Module
-Import-Module ActiveDirectory
-
 # Get all users in the domain
 $users = Get-ADUser -Filter * -Properties * -SearchBase "DC=contoso,DC=contoso,DC=local"
 
@@ -16,6 +13,7 @@ foreach ($user in $users)
         Move-ADObject -Identity $user.DistinguishedName -TargetPath "CN=Users,DC=contoso,DC=contoso,DC=local"
     }
 }
+
 
 
 
